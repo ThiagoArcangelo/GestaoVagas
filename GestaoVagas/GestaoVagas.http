@@ -1,0 +1,6 @@
+@GestaoVagas_HostAddress = http://localhost:5038
+
+GET {{GestaoVagas_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
