@@ -1,4 +1,4 @@
-﻿namespace GestaoVagas.Models;
+﻿namespace GestaoVagas.Entities;
 
 public class VagasEntity
 {
@@ -11,6 +11,6 @@ public class VagasEntity
     public string? Cidade { get; set; }
     public double Salario { get; set; }
     public string? Email { get; set; }
-    public DateTime Expiracao { get; set; }
+    public DateTime DataExp { get; set; }
     public char Pcd { get; set; }
 }
