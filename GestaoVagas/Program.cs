@@ -1,4 +1,6 @@
-using GestaoVagas.Services.Implementations;
+using GestaoServices.Implementations;
+using GestaoVagas.Repositories.Interfaces;
+using GestaoVagas.Services;
 using GestaoVagas.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,7 +12,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<IPostVagaRepository, PostVagaRepository>();
+builder.Services.AddTransient<IVagasRepository, VagaRepository>();
 
 var app = builder.Build();
 

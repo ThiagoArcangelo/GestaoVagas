@@ -1,6 +1,6 @@
-﻿namespace GestaoVagas.Entities;
+﻿namespace GestaoVagas.Model;
 
-public class VagasEntity
+public class VagasModel
 {
     public int Id { get; set; }
     public string? Titulo { get; set; }
